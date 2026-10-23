@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Meu Windows XP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="listatarefas.js" defer></script>
+</head>
+<body>
+    <main class="desktop">
+        <section class="window" aria-labelledby="window-title">
+            <header class="titlebar">
+                <span class="window-icon" aria-hidden="true">✓</span>
+                <h1 id="window-title">Lista de Tarefas</h1>
+                <div class="window-controls" aria-hidden="true">
+                    <span>_</span><span>□</span><span>×</span>
+                </div>
+            </header>
+            <div class="window-content">
+                <p class="intro">Organize suas tarefas como nos velhos tempos.</p>
+                <form id="task-form" class="task-form">
+                    <label for="task-input">Nova Tarefa</label>
+                    <div class="imput-row">
+                        <input id="task-input" name="task" type="text" maxlength="120" autocomplete="off">
+                        <button type="submit" class="xp-button">Adicionar</button>
+                    </div>
+                </form>
+                <p id="task-status" class="status" role="status" aria-live="polite">
+                    Nenhuma tarefa adicionada.
+                </p>
+                <h2 class="list-heading">Minhas tarefas</h2>
+                <ul id="task-list" class="task-list"></ul>
+                <div class="sound-area">
+                    <p class="sound-label">Som clássico do Windows XP</p>
+                    <button id="xp-sound-button" type="button" class="xp-button sound-button">
+                        Reproduzir som de inicialização
+                    </button>
+                    <audio id="xp-sound" preload="none"
+                    src="Windows XP Startup.wav"></audio>
+                    <p id="sound-status" class="sound-note" role="status" aria-live="polite">
+                        Clique no botão para reproduzir o som.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer class="taskbar">
+        <span class="windows-mark"><i></i><i></i><i></i><i></i></span> iniciar
+     </div>
+     <p>Lista de Tarefas</p>
+     </footer>
+</body>
+</html>
